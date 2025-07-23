@@ -2,9 +2,9 @@ import type { Config } from './types';
 
 export default {
   id: '/',
-  name: 'My Blog',
-  shortName: 'My Blog',
-  description: 'My blog description goes here...',
+  name: 'DBS AMGURI',
+  shortName: 'DBS',
+  description: 'WELCOME TO DBS FAMILY',
   direction: 'auto',
   language: 'en-US',
   backgroundColor: '#fff',
@@ -17,27 +17,27 @@ export default {
   preferRelatedApplications: false,
   shortcuts: [
     {
-      name: 'Shortcut 1',
+      name: 'ABOUT',
       shortName: 'Shortcut 1',
-      description: 'Shortcut 1 description goes here...',
-      url: '/search/label/shortcut-1?utm_source=homescreen',
+      description: 'ABOUT DBS',
+      url: '/p/about.html',
     },
     {
-      name: 'Shortcut 2',
+      name: 'notifications',
       shortName: 'Shortcut 2',
-      description: 'Shortcut 2 description goes here...',
-      url: '/search/label/shortcut-2?utm_source=homescreen',
+      description: 'notifications',
+      url: '/p/notifications.html',
     },
   ],
   pwa: {
     logs: true,
     // OneSignal is not available if you are not using cloudflare workers
-    oneSignalEnabled: false,
+    oneSignalEnabled: true,
     oneSignalConfig: {
-      appId: '********-****-****-****-************',
+      appId: '1805a5b4-c5d5-4f47-85a7-42c56491f366',
       allowLocalhostAsSecureOrigin: true,
     },
   },
   // Please replace with your blog url if you are using CDN (JsDelivr)
-  origin: 'https://hello-example.blogspot.com',
+  origin: 'https://www.dbsamguri.qzz.io',
 } satisfies Config;
